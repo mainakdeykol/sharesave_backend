@@ -1,0 +1,76 @@
+:root {
+    --main-bg-color: #edf5fe;
+    --light-blue: #03a9f4;
+    --dark-blue: #028bca;
+    --container-width: 500px;
+  }
+
+  body {
+    font-family: system-ui;
+    background-image: url(../img/5153829.jpg);
+    height: 98vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 250px;
+  }
+section.download {
+    background: rgb(239, 241, 243);
+    width: var(--container-width);
+    max-width: 90%;
+    border: 2px solid #7e888d;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px 0px #00000017;
+    padding: 2rem;
+    text-align: center;
+}
+.download__icon {
+    height: 8rem;
+}
+.download__meta h4 {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+.send-btn-container a {
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 40px;
+  margin-top: 15px;
+  text-decoration: none;
+  background-image: radial-gradient(100% 100% at 100% 0px, rgb(90, 218, 255) 0px, rgb(84, 104, 255) 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+ 
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 20px;
+  }
+
+  .send-btn-container a:hover {
+      background: var(--dark-blue);
+  }
+
+  @media screen and (max-width: 900px) {
+    :root {
+      --container-width: 350px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    :root {
+      --container-width: 250px;
+    } 
+  }
