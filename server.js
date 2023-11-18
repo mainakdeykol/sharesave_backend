@@ -4,14 +4,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 const cors = require('cors');
-const corsOptions = {
-    origin: "https://mainakdeykol.github.io/sharesave.github.io"
-     //['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
-  }
 
 const connectDB=require('./config/db');
 connectDB();
-app.use(cors(corsOptions))
+app.use(cors({
+    origin:"https://mainakdeykol.github.io/sharesave.github.io"
+    
+}));
 app.use(express.json());
 app.use(express.static('public'));
 app.set('views', path.join(__dirname, '/views'));
