@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     color: #333;
+    flex-direction: column;
   }
 
   .logo {
@@ -62,6 +63,17 @@ section.download {
 
   .send-btn-container a:hover {
       background: var(--dark-blue);
+  }
+
+  .foot{
+    position: absolute;
+    text-align: center;
+    z-index: 4;
+    bottom: 19px;
+  }
+  
+  .love{
+    color: #e25555;
   }
 
   @media screen and (max-width: 900px) {
