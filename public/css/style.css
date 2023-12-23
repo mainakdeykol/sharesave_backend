@@ -70,6 +70,7 @@ section.download {
     text-align: center;
     z-index: 4;
     bottom: 19px;
+    background: rgb(225, 238, 248);
   }
   
   .love{
